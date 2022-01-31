@@ -13,8 +13,6 @@ RUN apk upgrade && apk update \
   && pip install psycopg2 \
   && apk add jpeg-dev zlib-dev libjpeg \
   && pip install Pillow \
-  && apt-get -y install netcat gcc \
-  && apt-get clean \
   && apk del build-deps
 
 # install dependencies
